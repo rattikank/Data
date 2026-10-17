@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>อนุมัติใบขอซื้อ | Procurement System</title>
+    <title>Dashboard | Procurement System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
             </a>
             <div class="nav-label">เมนูหลัก</div>
             <nav class="nav">
-                <a class="" href="dashboard.html">
+                <a class="active" href="dashboard.html">
                     <span class="nav-icon">⌂</span>Dashboard
                 </a>
                 <a class="" href="requisitions.html">
@@ -24,7 +24,7 @@
                 <a class="" href="requisition-create.html">
                     <span class="nav-icon">＋</span>สร้างใบขอซื้อ
                 </a>
-                <a class="active" href="approvals.html">
+                <a class="" href="approvals.html">
                     <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
                 </a>
                 <a class="" href="purchase-orders.html">
@@ -48,7 +48,7 @@
         <main class="main">
             <header class="topbar">
                 <div class="crumb">
-                    Procurement / <strong>อนุมัติใบขอซื้อ</strong>
+                    Procurement / <strong>Dashboard</strong>
                 </div>
                 <div class="top-user">
                     <span class="avatar">A</span>
@@ -59,96 +59,167 @@
             <section class="content">
                 <div class="page-head">
                     <div>
-                        <div class="eyebrow">Procurement workspace</div>
-                        <h1>อนุมัติใบขอซื้อ</h1>
-                        <p>ตรวจสอบคำขอและพิจารณาอนุมัติ</p>
+                        <div class="eyebrow">ภาพรวมการดำเนินงาน</div>
+                        <h1>Dashboard</h1>
+                        <p>ภาพรวมระบบจัดซื้อจัดจ้างและสถานะล่าสุด</p>
                     </div>
-                    <a class="btn" href="requisitions.html">ดูใบขอซื้อทั้งหมด</a>
+                    <a class="btn" href="requisition-create.html">＋ สร้างใบขอซื้อ</a>
                 </div>
 
-                <section class="card table-card">
-                    <div class="table-tools">
-                        <input class="search" placeholder="⌕ ค้นหาด้วยเลขที่ / ชื่อ / แผนก">
-                        <select class="filter">
-                            <option>ทุกสถานะ</option>
-                            <option>รออนุมัติ</option>
-                            <option>อนุมัติแล้ว</option>
-                            <option>ปฏิเสธ</option>
-                        </select>
-                        <select class="filter">
-                            <option>ทุกแผนก</option>
-                            <option>IT</option>
-                            <option>Finance</option>
-                            <option>Procurement</option>
-                        </select>
-                        <span style="flex:1"></span>
-                        <button class="btn secondary" type="button">⚑ ตัวกรอง</button>
-                    </div>
+                <div class="grid stats">
+                    <article class="card stat">
+                        <div class="stat-top">ใบขอซื้อทั้งหมด <span class="stat-icon">▤</span></div>
+                        <div class="stat-value">503</div>
+                        <div class="stat-note"><strong>+12%</strong> จากเดือนก่อน</div>
+                    </article>
+                    <article class="card stat">
+                        <div class="stat-top">ใบสั่งซื้อ <span class="stat-icon">▣</span></div>
+                        <div class="stat-value">18</div>
+                        <div class="stat-note">เอกสารจัดซื้อทั้งหมด</div>
+                    </article>
+                    <article class="card stat">
+                        <div class="stat-top">รออนุมัติ <span class="stat-icon">◷</span></div>
+                        <div class="stat-value">24</div>
+                        <div class="stat-note">ต้องตรวจสอบรายการ</div>
+                    </article>
+                    <article class="card stat">
+                        <div class="stat-top">งบประมาณคงเหลือ <span class="stat-icon">฿</span></div>
+                        <div class="stat-value">฿340K</div>
+                        <div class="stat-note">จากงบประมาณรวม ฿450K</div>
+                    </article>
+                </div>
 
+                <div class="grid two-col">
+                    <section class="card section">
+                        <div class="section-head">
+                            <h2>ภาพรวมใบขอซื้อรายเดือน</h2>
+                            <a href="reports.html">ดูรายงาน →</a>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:30%"></div>
+                                <span class="bar-label">ม.ค.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:45%"></div>
+                                <span class="bar-label">ก.พ.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:38%"></div>
+                                <span class="bar-label">มี.ค.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:58%"></div>
+                                <span class="bar-label">เม.ย.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:47%"></div>
+                                <span class="bar-label">พ.ค.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:65%"></div>
+                                <span class="bar-label">มิ.ย.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:52%"></div>
+                                <span class="bar-label">ก.ค.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:78%"></div>
+                                <span class="bar-label">ส.ค.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:61%"></div>
+                                <span class="bar-label">ก.ย.</span>
+                            </div>
+                            <div class="bar-wrap">
+                                <div class="bar" style="height:88%"></div>
+                                <span class="bar-label">ต.ค.</span>
+                            </div>
+                        </div>
+                        <div class="legend">
+                            <span><i class="dot"></i>จำนวนใบขอซื้อ (ข้อมูลตัวอย่าง)</span>
+                        </div>
+                    </section>
+
+                    <section class="card section">
+                        <div class="section-head">
+                            <h2>รายการรอดำเนินการ</h2>
+                            <a href="approvals.html">ดูทั้งหมด →</a>
+                        </div>
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>เลขที่</th>
+                                        <th>แผนก</th>
+                                        <th>ยอดรวม</th>
+                                        <th>สถานะ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="id">REQ-004</td>
+                                        <td>IT</td>
+                                        <td>฿25,000</td>
+                                        <td><span class="status pending">รออนุมัติ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="id">REQ-008</td>
+                                        <td>Finance</td>
+                                        <td>฿9,000</td>
+                                        <td><span class="status pending">รออนุมัติ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="id">REQ-012</td>
+                                        <td>Procurement</td>
+                                        <td>฿5,000</td>
+                                        <td><span class="status processing">กำลังตรวจสอบ</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="id">REQ-016</td>
+                                        <td>IT</td>
+                                        <td>฿4,500</td>
+                                        <td><span class="status pending">รออนุมัติ</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="card section">
+                    <div class="section-head">
+                        <h2>กิจกรรมล่าสุด</h2>
+                        <span class="muted">ตัวอย่างข้อมูล</span>
+                    </div>
                     <div class="table-wrap">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>เลขที่</th>
-                                    <th>ผู้ขอซื้อ</th>
-                                    <th>แผนก</th>
+                                    <th>กิจกรรม</th>
+                                    <th>ผู้ดำเนินการ</th>
                                     <th>วันที่</th>
-                                    <th>ยอดรวม</th>
-                                    <th>ผู้ขายที่เสนอ</th>
                                     <th>สถานะ</th>
-                                    <th>ดำเนินการ</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><span class="id">REQ-001</span></td>
+                                    <td>สร้างใบขอซื้อ REQ-503</td>
                                     <td>Aem</td>
-                                    <td>IT</td>
-                                    <td>05/10/2026</td>
-                                    <td>฿54,000</td>
-                                    <td>ABC Computer</td>
+                                    <td>17/10/2026</td>
                                     <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
                                 </tr>
                                 <tr>
-                                    <td><span class="id">REQ-004</span></td>
-                                    <td>Aem</td>
-                                    <td>IT</td>
-                                    <td>08/10/2026</td>
-                                    <td>฿25,000</td>
-                                    <td>เลือกผู้ขาย</td>
-                                    <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="id">REQ-008</span></td>
-                                    <td>Somchai</td>
-                                    <td>Finance</td>
-                                    <td>09/10/2026</td>
-                                    <td>฿9,000</td>
-                                    <td>XYZ Office</td>
-                                    <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
+                                    <td>สร้างใบสั่งซื้อ PO-018</td>
+                                    <td>Admin Demo</td>
+                                    <td>16/10/2026</td>
+                                    <td><span class="status approved">สำเร็จ</span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <div class="table-foot">
-                        <span>แสดงข้อมูลตัวอย่าง 3 รายการ</span>
-                        <div class="pagination">
-                            <span>‹</span>
-                            <span class="current">1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>›</span>
-                        </div>
-                    </div>
                 </section>
-
-                <div class="notice">
-                    
-                </div>
             </section>
         </main>
     </div>

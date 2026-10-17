@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>โปรไฟล์ / ตั้งค่า | Procurement System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">▣</span>
+                <span>Procurement<small>MANAGEMENT SYSTEM</small></span>
+            </a>
+            <div class="nav-label">เมนูหลัก</div>
+            <nav class="nav">
+                <a class="" href="dashboard.html">
+                    <span class="nav-icon">⌂</span>Dashboard
+                </a>
+                <a class="" href="requisitions.html">
+                    <span class="nav-icon">▤</span>ใบขอซื้อ
+                </a>
+                <a class="" href="requisition-create.html">
+                    <span class="nav-icon">＋</span>สร้างใบขอซื้อ
+                </a>
+                <a class="" href="approvals.html">
+                    <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
+                </a>
+                <a class="" href="purchase-orders.html">
+                    <span class="nav-icon">▣</span>ใบสั่งซื้อ
+                </a>
+                <a class="" href="goods-receipts.html">
+                    <span class="nav-icon">⇩</span>รับสินค้า
+                </a>
+                <a class="" href="reports.html">
+                    <span class="nav-icon">▥</span>รายงาน
+                </a>
+                <a class="active" href="profile.html">
+                    <span class="nav-icon">⚙</span>โปรไฟล์ / ตั้งค่า
+                </a>
+            </nav>
+            <div class="side-bottom">
+                
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="crumb">
+                    Procurement / <strong>โปรไฟล์ / ตั้งค่า</strong>
+                </div>
+                <div class="top-user">
+                    <span class="avatar">A</span>
+                    <span class="user-name">Admin Demo</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Account settings</div>
+                        <h1>โปรไฟล์และตั้งค่า</h1>
+                        <p>จัดการข้อมูลผู้ใช้งานและการเข้าสู่ระบบ</p>
+                    </div>
+                </div>
+
+                <div class="grid profile-layout">
+                    <aside class="card profile-side">
+                        <div class="profile-big">A</div>
+                        <h3>Admin Demo</h3>
+                        <p>ผู้ดูแลระบบ (ตัวอย่าง)</p>
+                        <span class="status approved">บัญชีตัวอย่าง</span>
+                    </aside>
+
+                    <section class="card form-card">
+                        <h2 class="form-section-title">ข้อมูลผู้ใช้งาน</h2>
+                        <form action="profile.html">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label>ชื่อ-นามสกุล</label>
+                                    <input value="Admin Demo">
+                                </div>
+                                <div class="field">
+                                    <label>Username</label>
+                                    <input value="admin.demo">
+                                </div>
+                                <div class="field">
+                                    <label>อีเมล</label>
+                                    <input type="email" value="admin@example.com">
+                                </div>
+                                <div class="field">
+                                    <label>แผนก</label>
+                                    <select>
+                                        <option>IT</option>
+                                        <option>Finance</option>
+                                        <option>Procurement</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn" type="submit">บันทึกข้อมูลตัวอย่าง</button>
+                            </div>
+                        </form>
+
+                        <h2 class="form-section-title" style="margin-top:30px">ความปลอดภัย</h2>
+                        <div class="field">
+                            <label>รหัสผ่านปัจจุบัน</label>
+                            <input type="password" placeholder="กรอกรหัสผ่านปัจจุบัน">
+                        </div>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label>รหัสผ่านใหม่</label>
+                                <input type="password" placeholder="กรอกรหัสผ่านใหม่">
+                            </div>
+                            <div class="field">
+                                <label>ยืนยันรหัสผ่านใหม่</label>
+                                <input type="password" placeholder="กรอกรหัสผ่านอีกครั้ง">
+                            </div>
+                        </div>
+                        <button class="btn secondary" type="button">เปลี่ยนรหัสผ่าน (ตัวอย่าง)</button>
+                    </section>
+                </div>
+
+                <div class="notice">
+                  
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

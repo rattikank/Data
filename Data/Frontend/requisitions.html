@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>รายการใบขอซื้อ | Procurement System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">▣</span>
+                <span>Procurement<small>MANAGEMENT SYSTEM</small></span>
+            </a>
+            <div class="nav-label">เมนูหลัก</div>
+            <nav class="nav">
+                <a class="" href="dashboard.html">
+                    <span class="nav-icon">⌂</span>Dashboard
+                </a>
+                <a class="active" href="requisitions.html">
+                    <span class="nav-icon">▤</span>ใบขอซื้อ
+                </a>
+                <a class="" href="requisition-create.html">
+                    <span class="nav-icon">＋</span>สร้างใบขอซื้อ
+                </a>
+                <a class="" href="approvals.html">
+                    <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
+                </a>
+                <a class="" href="purchase-orders.html">
+                    <span class="nav-icon">▣</span>ใบสั่งซื้อ
+                </a>
+                <a class="" href="goods-receipts.html">
+                    <span class="nav-icon">⇩</span>รับสินค้า
+                </a>
+                <a class="" href="reports.html">
+                    <span class="nav-icon">▥</span>รายงาน
+                </a>
+                <a class="" href="profile.html">
+                    <span class="nav-icon">⚙</span>โปรไฟล์ / ตั้งค่า
+                </a>
+            </nav>
+            <div class="side-bottom">
+                
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="crumb">
+                    Procurement / <strong>รายการใบขอซื้อ</strong>
+                </div>
+                <div class="top-user">
+                    <span class="avatar">A</span>
+                    <span class="user-name">Admin Demo</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Procurement workspace</div>
+                        <h1>รายการใบขอซื้อ</h1>
+                        <p>ตรวจสอบและติดตามใบขอซื้อทั้งหมด</p>
+                    </div>
+                    <a class="btn" href="requisition-create.html">＋ สร้างใบขอซื้อ</a>
+                </div>
+
+                <section class="card table-card">
+                    <div class="table-tools">
+                        <input class="search" placeholder="⌕ ค้นหาด้วยเลขที่ / ชื่อ / แผนก">
+                        <select class="filter">
+                            <option>ทุกสถานะ</option>
+                            <option>รออนุมัติ</option>
+                            <option>อนุมัติแล้ว</option>
+                            <option>ปฏิเสธ</option>
+                        </select>
+                        <select class="filter">
+                            <option>ทุกแผนก</option>
+                            <option>IT</option>
+                            <option>Finance</option>
+                            <option>Procurement</option>
+                        </select>
+                        <span style="flex:1"></span>
+                        <button class="btn secondary" type="button">⚑ ตัวกรอง</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>เลขที่ใบขอซื้อ</th>
+                                    <th>ผู้ขอซื้อ</th>
+                                    <th>แผนก</th>
+                                    <th>วันที่</th>
+                                    <th>ยอดรวม</th>
+                                    <th>สถานะ</th>
+                                    <th>รายละเอียด</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="id">REQ-001</span></td>
+                                    <td>Aem</td>
+                                    <td>IT</td>
+                                    <td>05/10/2026</td>
+                                    <td>฿54,000</td>
+                                    <td><span class="status pending">รออนุมัติ</span></td>
+                                    <td><a class="table-link" href="requisition-create.html">ดูรายละเอียด</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">REQ-002</span></td>
+                                    <td>Somchai</td>
+                                    <td>Finance</td>
+                                    <td>06/10/2026</td>
+                                    <td>฿30,000</td>
+                                    <td><span class="status approved">อนุมัติแล้ว</span></td>
+                                    <td><a class="table-link" href="requisition-create.html">ดูรายละเอียด</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">REQ-003</span></td>
+                                    <td>Suda</td>
+                                    <td>Procurement</td>
+                                    <td>07/10/2026</td>
+                                    <td>฿6,400</td>
+                                    <td><span class="status rejected">ปฏิเสธ</span></td>
+                                    <td><a class="table-link" href="requisition-create.html">ดูรายละเอียด</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">REQ-004</span></td>
+                                    <td>Aem</td>
+                                    <td>IT</td>
+                                    <td>08/10/2026</td>
+                                    <td>฿25,000</td>
+                                    <td><span class="status pending">รออนุมัติ</span></td>
+                                    <td><a class="table-link" href="requisition-create.html">ดูรายละเอียด</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-foot">
+                        <span>แสดงข้อมูลตัวอย่าง 4 รายการ</span>
+                        <div class="pagination">
+                            <span>‹</span>
+                            <span class="current">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>›</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="notice">
+                   
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>รายงาน | Procurement System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">▣</span>
+                <span>Procurement<small>MANAGEMENT SYSTEM</small></span>
+            </a>
+            <div class="nav-label">เมนูหลัก</div>
+            <nav class="nav">
+                <a class="" href="dashboard.html">
+                    <span class="nav-icon">⌂</span>Dashboard
+                </a>
+                <a class="" href="requisitions.html">
+                    <span class="nav-icon">▤</span>ใบขอซื้อ
+                </a>
+                <a class="" href="requisition-create.html">
+                    <span class="nav-icon">＋</span>สร้างใบขอซื้อ
+                </a>
+                <a class="" href="approvals.html">
+                    <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
+                </a>
+                <a class="" href="purchase-orders.html">
+                    <span class="nav-icon">▣</span>ใบสั่งซื้อ
+                </a>
+                <a class="" href="goods-receipts.html">
+                    <span class="nav-icon">⇩</span>รับสินค้า
+                </a>
+                <a class="active" href="reports.html">
+                    <span class="nav-icon">▥</span>รายงาน
+                </a>
+                <a class="" href="profile.html">
+                    <span class="nav-icon">⚙</span>โปรไฟล์ / ตั้งค่า
+                </a>
+            </nav>
+            <div class="side-bottom">
+                
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="crumb">
+                    Procurement / <strong>รายงาน</strong>
+                </div>
+                <div class="top-user">
+                    <span class="avatar">A</span>
+                    <span class="user-name">Admin Demo</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Analytics & insights</div>
+                        <h1>รายงาน</h1>
+                        <p>เลือกประเภทรายงานที่ต้องการตรวจสอบ</p>
+                    </div>
+                    <button class="btn secondary" type="button">ช่วงเวลา: เดือนนี้⌄</button>
+                </div>
+
+                <div class="grid report-grid">
+                    <article class="card report-card">
+                        <div class="report-icon">▤</div>
+                        <h3>รายงานใบขอซื้อ</h3>
+                        <p>สรุปจำนวนใบขอซื้อแยกตามแผนก วันที่ และสถานะ</p>
+                        <a class="btn" href="requisitions.html">ดูรายงาน</a>
+                    </article>
+                    <article class="card report-card">
+                        <div class="report-icon">▣</div>
+                        <h3>รายงานใบสั่งซื้อ</h3>
+                        <p>สรุปยอดสั่งซื้อและรายการสั่งซื้อแยกตามผู้ขาย</p>
+                        <a class="btn" href="purchase-orders.html">ดูรายงาน</a>
+                    </article>
+                    <article class="card report-card">
+                        <div class="report-icon">฿</div>
+                        <h3>รายงานงบประมาณ</h3>
+                        <p>เปรียบเทียบงบประมาณที่ตั้งไว้ ใช้ไปแล้ว และคงเหลือ</p>
+                        <a class="btn" href="#budget">ดูรายงาน</a>
+                    </article>
+                    <article class="card report-card">
+                        <div class="report-icon">⇩</div>
+                        <h3>รายงานรับสินค้า</h3>
+                        <p>ตรวจสอบยอดรับสินค้าราย PO และยอดคงค้าง</p>
+                        <a class="btn" href="goods-receipts.html">ดูรายงาน</a>
+                    </article>
+                    <article class="card report-card">
+                        <div class="report-icon">♙</div>
+                        <h3>รายงานผู้ขาย</h3>
+                        <p>ดูจำนวนรายการและมูลค่าการจัดซื้อของผู้ขายแต่ละราย</p>
+                        <a class="btn" href="purchase-orders.html">ดูรายงาน</a>
+                    </article>
+                    <article class="card report-card">
+                        <div class="report-icon">↗</div>
+                        <h3>ภาพรวมการจัดซื้อ</h3>
+                        <p>ติดตามแนวโน้มและตัวชี้วัดการจัดซื้อขององค์กร</p>
+                        <a class="btn" href="dashboard.html">ดูภาพรวม</a>
+                    </article>
+                </div>
+
+                <div class="notice">
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

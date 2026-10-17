@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ใบสั่งซื้อ | Procurement System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">▣</span>
+                <span>Procurement<small>MANAGEMENT SYSTEM</small></span>
+            </a>
+            <div class="nav-label">เมนูหลัก</div>
+            <nav class="nav">
+                <a class="" href="dashboard.html">
+                    <span class="nav-icon">⌂</span>Dashboard
+                </a>
+                <a class="" href="requisitions.html">
+                    <span class="nav-icon">▤</span>ใบขอซื้อ
+                </a>
+                <a class="" href="requisition-create.html">
+                    <span class="nav-icon">＋</span>สร้างใบขอซื้อ
+                </a>
+                <a class="" href="approvals.html">
+                    <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
+                </a>
+                <a class="active" href="purchase-orders.html">
+                    <span class="nav-icon">▣</span>ใบสั่งซื้อ
+                </a>
+                <a class="" href="goods-receipts.html">
+                    <span class="nav-icon">⇩</span>รับสินค้า
+                </a>
+                <a class="" href="reports.html">
+                    <span class="nav-icon">▥</span>รายงาน
+                </a>
+                <a class="" href="profile.html">
+                    <span class="nav-icon">⚙</span>โปรไฟล์ / ตั้งค่า
+                </a>
+            </nav>
+            <div class="side-bottom">
+                
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="crumb">
+                    Procurement / <strong>ใบสั่งซื้อ</strong>
+                </div>
+                <div class="top-user">
+                    <span class="avatar">A</span>
+                    <span class="user-name">Admin Demo</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div>
+                        <div class="eyebrow">Procurement workspace</div>
+                        <h1>ใบสั่งซื้อ</h1>
+                        <p>ติดตามใบสั่งซื้อและผู้ขาย</p>
+                    </div>
+                    <a class="btn" href="approvals.html">＋ สร้างจากการอนุมัติ</a>
+                </div>
+
+                <section class="card table-card">
+                    <div class="table-tools">
+                        <input class="search" placeholder="⌕ ค้นหาด้วยเลขที่ / ชื่อ / แผนก">
+                        <select class="filter">
+                            <option>ทุกสถานะ</option>
+                            <option>รออนุมัติ</option>
+                            <option>อนุมัติแล้ว</option>
+                            <option>ปฏิเสธ</option>
+                        </select>
+                        <select class="filter">
+                            <option>ทุกแผนก</option>
+                            <option>IT</option>
+                            <option>Finance</option>
+                            <option>Procurement</option>
+                        </select>
+                        <span style="flex:1"></span>
+                        <button class="btn secondary" type="button">⚑ ตัวกรอง</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>เลขที่ PO</th>
+                                    <th>ใบขอซื้อ</th>
+                                    <th>ผู้ขาย</th>
+                                    <th>แผนก</th>
+                                    <th>วันที่สั่งซื้อ</th>
+                                    <th>ยอดรวม</th>
+                                    <th>สถานะ</th>
+                                    <th>รายละเอียด</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="id">PO-001</span></td>
+                                    <td>REQ-001</td>
+                                    <td>ABC Computer</td>
+                                    <td>IT</td>
+                                    <td>10/10/2026</td>
+                                    <td>฿54,000</td>
+                                    <td><span class="status approved">อนุมัติแล้ว</span></td>
+                                    <td><a class="table-link" href="goods-receipts.html">ดูรายละเอียด</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">PO-002</span></td>
+                                    <td>REQ-002</td>
+                                    <td>XYZ Office</td>
+                                    <td>Finance</td>
+                                    <td>11/10/2026</td>
+                                    <td>฿30,000</td>
+                                    <td><span class="status processing">สั่งซื้อแล้ว</span></td>
+                                    <td><a class="table-link" href="goods-receipts.html">ดูรายละเอียด</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">PO-003</span></td>
+                                    <td>REQ-003</td>
+                                    <td>ABC Computer</td>
+                                    <td>Procurement</td>
+                                    <td>12/10/2026</td>
+                                    <td>฿6,400</td>
+                                    <td><span class="status received">รับครบแล้ว</span></td>
+                                    <td><a class="table-link" href="goods-receipts.html">ดูรายละเอียด</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-foot">
+                        <span>แสดงข้อมูลตัวอย่าง 3 รายการ</span>
+                        <div class="pagination">
+                            <span>‹</span>
+                            <span class="current">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>›</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="notice">
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

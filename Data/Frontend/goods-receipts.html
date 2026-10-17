@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>อนุมัติใบขอซื้อ | Procurement System</title>
+    <title>รับสินค้า | Procurement System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,13 +24,13 @@
                 <a class="" href="requisition-create.html">
                     <span class="nav-icon">＋</span>สร้างใบขอซื้อ
                 </a>
-                <a class="active" href="approvals.html">
+                <a class="" href="approvals.html">
                     <span class="nav-icon">✓</span>อนุมัติใบขอซื้อ
                 </a>
                 <a class="" href="purchase-orders.html">
                     <span class="nav-icon">▣</span>ใบสั่งซื้อ
                 </a>
-                <a class="" href="goods-receipts.html">
+                <a class="active" href="goods-receipts.html">
                     <span class="nav-icon">⇩</span>รับสินค้า
                 </a>
                 <a class="" href="reports.html">
@@ -48,7 +48,7 @@
         <main class="main">
             <header class="topbar">
                 <div class="crumb">
-                    Procurement / <strong>อนุมัติใบขอซื้อ</strong>
+                    Procurement / <strong>รับสินค้า</strong>
                 </div>
                 <div class="top-user">
                     <span class="avatar">A</span>
@@ -60,10 +60,10 @@
                 <div class="page-head">
                     <div>
                         <div class="eyebrow">Procurement workspace</div>
-                        <h1>อนุมัติใบขอซื้อ</h1>
-                        <p>ตรวจสอบคำขอและพิจารณาอนุมัติ</p>
+                        <h1>รับสินค้า</h1>
+                        <p>บันทึกการรับสินค้าและตรวจสอบยอดคงเหลือ</p>
                     </div>
-                    <a class="btn" href="requisitions.html">ดูใบขอซื้อทั้งหมด</a>
+                    <a class="btn" href="purchase-orders.html">ดูใบสั่งซื้อ</a>
                 </div>
 
                 <section class="card table-card">
@@ -89,46 +89,46 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>เลขที่</th>
-                                    <th>ผู้ขอซื้อ</th>
-                                    <th>แผนก</th>
+                                    <th>เลขที่รับสินค้า</th>
+                                    <th>เลขที่ PO</th>
+                                    <th>ผู้ขาย</th>
                                     <th>วันที่</th>
-                                    <th>ยอดรวม</th>
-                                    <th>ผู้ขายที่เสนอ</th>
+                                    <th>ยอดสั่งซื้อ</th>
+                                    <th>รับแล้ว</th>
+                                    <th>คงเหลือ</th>
                                     <th>สถานะ</th>
-                                    <th>ดำเนินการ</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><span class="id">REQ-001</span></td>
-                                    <td>Aem</td>
-                                    <td>IT</td>
-                                    <td>05/10/2026</td>
-                                    <td>฿54,000</td>
+                                    <td><span class="id">GR-001</span></td>
+                                    <td>PO-001</td>
                                     <td>ABC Computer</td>
-                                    <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
+                                    <td>13/10/2026</td>
+                                    <td>฿54,000</td>
+                                    <td>฿30,000</td>
+                                    <td>฿24,000</td>
+                                    <td><span class="status processing">รับบางส่วน</span></td>
                                 </tr>
                                 <tr>
-                                    <td><span class="id">REQ-004</span></td>
-                                    <td>Aem</td>
-                                    <td>IT</td>
-                                    <td>08/10/2026</td>
-                                    <td>฿25,000</td>
-                                    <td>เลือกผู้ขาย</td>
-                                    <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="id">REQ-008</span></td>
-                                    <td>Somchai</td>
-                                    <td>Finance</td>
-                                    <td>09/10/2026</td>
-                                    <td>฿9,000</td>
+                                    <td><span class="id">GR-002</span></td>
+                                    <td>PO-002</td>
                                     <td>XYZ Office</td>
-                                    <td><span class="status pending">รออนุมัติ</span></td>
-                                    <td><a class="table-link" href="requisition-create.html">ตรวจสอบ</a></td>
+                                    <td>14/10/2026</td>
+                                    <td>฿30,000</td>
+                                    <td>฿30,000</td>
+                                    <td>฿0</td>
+                                    <td><span class="status received">รับครบแล้ว</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="id">GR-003</span></td>
+                                    <td>PO-003</td>
+                                    <td>ABC Computer</td>
+                                    <td>15/10/2026</td>
+                                    <td>฿6,400</td>
+                                    <td>฿0</td>
+                                    <td>฿6,400</td>
+                                    <td><span class="status pending">รอรับสินค้า</span></td>
                                 </tr>
                             </tbody>
                         </table>
